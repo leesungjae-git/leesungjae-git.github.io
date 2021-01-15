@@ -1,17 +1,10 @@
 ---
-title: test2
+title: 2021-01-15
 category: Machine Learning
 order: 1
 ---
 
-Sync your Facebook contacts with ChatApp. Any of your Facebook friends with ChatApp accounts are automatically added to your contact list!
+아래 서적을 기초로 기계학습을 공부!
+> 기계학습(MACHINE LEARNING)_한빛아카데미_오일석 지음
 
-> Signing up with Facebook automatically starts syncing contacts.
-
-To sync your contacts:
-
-1. Open your *User Settings*
-2. Select the **Connect Facebook** button
-3. Authorise ChatApp
-
-![](//placehold.it/800x600)
+![기계학습](./images/기계학습_표지.jpg)
