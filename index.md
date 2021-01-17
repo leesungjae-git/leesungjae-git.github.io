@@ -20,6 +20,8 @@ KTL
 
 Including machine learning.
 
-#### Test
+#### Ceremony day
 
-Test pages.
+진수 1일 : 1월 15일(금)
+
+
