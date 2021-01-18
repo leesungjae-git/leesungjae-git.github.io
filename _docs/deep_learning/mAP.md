@@ -16,10 +16,11 @@ Binary Classifier의 Prediction 결과를 2x2 Matrix로 나타낸 것.
 1) 첫번째 term : Prediction과 Ground Truth의 일치여부로 True/False 정함.
 2) 두번째 term : Prediction 결과에 따라 Positive/Negative를 정함.
 
-||Pred.|Pred.|
-||+|-|
-|+|True Positive|False Negative|
-|-|False Positive|True Negative|
+|||Pred.|Pred.|
+||||
+|||+|-|
+|G.T|+|True Positive|False Negative|
+|G.T|-|False Positive|True Negative|
 
 ### precision
 분류기의 성능평가지표로 사용하는 Precision-Recall에서의 Precision.
