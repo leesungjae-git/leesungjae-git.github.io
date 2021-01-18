@@ -34,10 +34,23 @@ Recall은 G.T의 총 positive sample 중에서 positive로 맞게 예측한 것�
 > 전체 정보(TP+FN)중에서 검출된 것(TP)의 비율을 Recall 이라고 함.
 
 
-### AP(Average Precision)
-Recall Value [0.0, 0.1, ..., 1.0] 값들에 대응하는 Precision 값들의 average.  
+### 3. mAP 구하는 방법
+[The PASCAL Visual Object Classes(VOC) Challenge](http://homepages.inf.ed.ac.uk/ckiw/postscript/ijcv_voc09.pdf) 수식
+#### 3.1 recall-precision 그래프 그리기
+1) Treshold를 0으로 정해놓고 detection 알고리즘을 모든 test image에 돌려본다.  
+2) bounding-box에 해당하는 confidence score(객체일 확률)과 true positive/false positive 여부를 pair로 저장한다.  
+3) (prob.) pair를 확률값에 따라 내림차순으로 정렬한다.  
+[그래프 그리는 과정](https://www.youtube.com/watch?v=yjCMEjoc_ZI)
 
-### mAP(mean Average Precision)
-1개의 object당 1개의 AP 값을 구하고, 여러 object-detector에 대해서 mean값을 구한 것.  
+#### 3.2 Intepolated recall-precision 값 11개 구하기
+위 수식에 따라 11개의 recall 값에 대한 precision 값을 구한다.  
+11개의 recall 값 : [0.0, 0.1, …, 1.0] 의 evenly-spaced 11-values  
 
-#### 
+#### 3.3 AP 구하기
+11개의 precision 값을 평균 낸다.  
+
+#### 3.4 mAP 구하기
+여러개의 object에 대해 AP 평균 내기.  
+
+### 3. python 코드
+[python 코드](https://github.com/penny4860/object-detector/blob/master/object_detector/evaluate.py)
