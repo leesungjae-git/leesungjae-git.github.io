@@ -1,5 +1,5 @@
 ---
-title: 2021-01-18
+title: 2021-01-18_mAP
 category: Deep Learning
 order: 2
 ---
