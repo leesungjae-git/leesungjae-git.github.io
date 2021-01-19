@@ -7,7 +7,7 @@ order: 2
 # Docker란 무엇인가?  
 출처 : https://89douner.tistory.com/96?category=878197  
 
-1. pytorch 컨테이너 만들기  
+### 1. pytorch 컨테이너 만들기  
 1) docker image 찾기 - pytorch와 관련된 image 검색  
 '''docker search pytorch'''  
 
@@ -27,7 +27,7 @@ order: 2
 5) container 실행  
 '''docker exec -it pytorch bash'''  
 
-2. jupyter notebook 설치 및 실행  
+### 2. jupyter notebook 설치 및 실행  
 1) jupyter 설치  
 '''conda install jupyter'''  
 
