@@ -8,6 +8,8 @@ order: 2
 출처 :  
 https://eehoeskrap.tistory.com/237  
 https://better-today.tistory.com/1  
+https://seongkyun.github.io/study/2019/01/15/map/  
+https://sumniya.tistory.com/26
 
 mAP : mean Average Precision
 
@@ -39,12 +41,14 @@ Recall은 G.T의 총 positive sample 중에서 positive로 맞게 예측한 것�
 #### 3.1 recall-precision 그래프 그리기
 1) Treshold를 0으로 정해놓고 detection 알고리즘을 모든 test image에 돌려본다.  
 2) bounding-box에 해당하는 confidence score(객체일 확률)과 true positive/false positive 여부를 pair로 저장한다.  
-3) (prob.) pair를 확률값에 따라 내림차순으로 정렬한다.  
+3) (prob.) pair를 확률값(confidence value)에 따라 내림차순으로 정렬한다.
+[3)의 추가 설명](https://ctkim.tistory.com/79)  
 [그래프 그리는 과정](https://www.youtube.com/watch?v=yjCMEjoc_ZI)
 
 #### 3.2 Intepolated recall-precision 값 11개 구하기
 위 수식에 따라 11개의 recall 값에 대한 precision 값을 구한다.  
 11개의 recall 값 : [0.0, 0.1, …, 1.0] 의 evenly-spaced 11-values  
+[precision-recall graph에 대한 추가 설명_식포함](https://seongkyun.github.io/study/2019/01/15/map/)
 
 #### 3.3 AP 구하기
 11개의 precision 값을 평균 낸다.  
@@ -54,3 +58,4 @@ Recall은 G.T의 총 positive sample 중에서 positive로 맞게 예측한 것�
 
 ### 3. python 코드
 [python 코드](https://github.com/penny4860/object-detector/blob/master/object_detector/evaluate.py)
+[python 코드](https://github.com/Cartucho/mAP)
