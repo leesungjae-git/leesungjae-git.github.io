@@ -22,6 +22,7 @@ Including machine learning.
 
 #### Ceremony day
 
-진수 1일 : 1월 15일(금)
+진수 1일 : 1월 15일(금)  
+동환아 ㅠㅠㅠㅠ : 21년 1월 26일 하트
 
 
